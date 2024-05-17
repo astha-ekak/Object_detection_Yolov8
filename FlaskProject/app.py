@@ -7,6 +7,10 @@ astha = Flask(__name__)      #instance
 def home():
     return rt('index.html')
 
+@astha.route('/2')  
+def home2():
+    return rt('index2.html')
+
 @astha.route('/about')
 def about():
     return rt('about.html') 
